@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+   body {
+    
+    margin: 0;
+    padding: 0;
+    background-image: url(img/new.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+                background-color:  #0763c6;
+                color: #ffffff;
+                line-height: 60%;
+                height: 100px;
+
+            }
+            nav{
+                float:  right;
+            }
+            .navi:hover{
+                background-color: #6e98c6;
+            }
+            .navi{
+                color: #ffffff;
+                margin:10px;
+                font-size:20px;
+                text-decoration:none;
+            }
+
+            .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            }
+            .nav-links {
+            display: flex;
+            
+           }
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #e3eaed;
+    box-shadow: 0 4px 8px rgba(85, 7, 7, 0.1);
+    border-radius: 8px;
+    border: 2px solid rgb(78, 139, 139);
+}
+
+section {
+    background: linear-gradient(to right, rgb(4, 80, 146), rgb(76, 120, 149), rgb(95, 155, 177), rgb(137, 204, 237));
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(102, 99, 99, 0.1);
+    max-width: 800px;
+    color: #ffffff;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background: #0e4185;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+
+h2, h3 {
+    color: #ffffff;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Updated Section Layout */
+section:last-of-type {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #0763c6;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 200px;
+                text-align: left;
+                padding: 10px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .navi {
+                font-size: 16px;
+                display: block;
+                padding: 10px;
+            }
+            footer{
+                padding: 1px;
+            }
+    section:last-of-type {
+        grid-template-columns: 1fr; /* Stack sections in small screens */
+    }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <br>
+        <h1 style="text-align: center;">Employee Panel</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        <nav style="text-align: right">
+            <div id="nav-links" class="nav-links">
+            <a class="navi"href="detail.html">Profile</a>
+            <a class="navi"href="attendence.html">Attendance </a>
+            <a class="navi"href="Payroll.html"> Payroll</a>
+            <a class="navi"href="main.php">Logout</a>
+            </div>
+        </nav><br>
+    </header>
+
+<section>
+  <h2>Welcome to the Employee Dashboard</h2>
+  <p>Use the options in the navigation bar to manage profile, attendance, and payroll.</p>
+</section>
+
+<section>
+  <div>
+      <h3>Profile Information</h3>
+      <ul>
+          <li><a href="detail.html">Profile</a></li>
+      </ul>
+  </div>
+  <div>
+      <h3>Attendance</h3>
+      <ul>
+          <li><a href="attendence.html">Attendance</a></li>
+      </ul>
+  </div>
+  <div>
+      <h3>Payroll Information</h3>
+      <ul>
+          <li><a href="Payroll.html">Payroll</a></li>
+      </ul>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; All Right Reserved.</p>
+</footer>
+</body>
+</html>

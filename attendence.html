@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+    
+    header nav ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    header nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    main {
+        margin: 2rem auto;
+        max-width: 600px;
+        height: 400px;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        border: 2px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+        font-size: 30px;
+        text-align: center;
+        color: #3b5be5;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1em 0;
+    }
+    
+    table th, table td {
+        border: 1px solid #111010;
+        padding: 8px;
+        text-align: center;
+    }
+    
+    table th {
+        background-color: #8e6ff3;
+    }
+    .btn{
+      text-align: center;
+      color: rgb(208, 39, 39);
+      border-radius: 5px;
+      border-color:rgb(138, 41, 41); 
+      border-style:solid; 
+      border-width:2px; 
+      width:150px; 
+      height:7opx; 
+      font-size:15px;
+      float: right;
+      background-color: rgb(165, 238, 238);
+    }
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0e4185;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        padding: 0 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    table th, table td {
+        font-size: 0.9em;
+    }
+}
+</style>    
+</head>
+<body>
+    <main>
+        <section id="attendance">
+            <h2>Attendance Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2024-12-o1 to 2024-12-24</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-04 to 2024-11-30 </td>
+                        <td>present</td>
+                    </tr>
+                    <tr>
+                        <td>2024-10-01 to 2024-10-03</td>
+                        <td>Absent</td>
+                    </tr>
+                    <tr>
+                        <td>2024-09-01 to 2024-09-30</td>
+                        <td>Present</td>
+                    </tr>
+                    <tr>
+                        <td>2024-08-10 to 2024-08-13 </td>
+                        <td>Absent</td>
+                    </tr>
+                    <tr>
+                        <td>2024-07-01 to 2024-07-31 </td>
+                        <td>Present</td>
+                    </tr>
+                </tbody>
+            </table><br>
+        </section>
+        <a href="Employee.html" target="_blank">
+        <button class="btn"><b>Back</b></button></a>
+    </main>
+    <footer>
+        <p>&copy; All Right Reserved. </p>
+    </footer>
+</body>
+</html>

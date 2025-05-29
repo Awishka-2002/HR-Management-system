@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admin Panel</title>
+        <style>
+            body {
+   
+                margin: 0;
+                padding: 0;
+                background-image: url(img/ad.jpg);
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                
+                
+
+            }
+            header{
+                background-color:  #0763c6;
+                color: #ffffff;
+                line-height: 60%;
+                height: 100px;
+
+            }
+            nav{
+                float:  right;
+            }
+            section {
+                 background: linear-gradient(to right, rgb(4, 80, 146), rgb(76, 120, 149), rgb(95, 155, 177), rgb(137, 204, 237));
+                 margin: 0;
+                 margin: 1rem auto;
+                 padding: 1rem;
+                 border-radius: 10px;
+                 box-shadow: 0 0 5px rgba(102, 99, 99, 0.1);
+                 max-width: 800px;
+                 color: #ffffff;
+   
+            }
+
+            h2, h3 {
+                 color: #ffffff;
+            }
+
+            ul {
+                 list-style: none;
+                 padding: 0;
+            }
+
+            ul li {
+                 margin: 0.5rem 0;
+            }
+
+            ul li a {
+                 text-decoration: none;
+                 color: #ffffff;
+            }
+
+            ul li a:hover {
+                 text-decoration: underline;
+            }
+            .navi:hover{
+                background-color: #7f95ab;
+            }
+            .navi{
+                color: #ffffff;
+                margin:10px;
+                font-size:20px;
+                text-decoration:none;
+
+                
+            }
+            .nav-links {
+            display: flex;
+            
+            }
+            
+
+            .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            }
+            footer {
+                text-align: center;
+                padding: 5px;
+                background: #0e4185;
+                color: white;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+            }
+
+            @media (max-width: 768px) {
+            .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background-color: #0763c6;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 200px;
+                text-align: left;
+                padding: 10px;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .navi {
+                font-size: 16px;
+                display: block;
+                padding: 10px;
+            }
+            footer{
+                padding: 1px;
+            }
+            h1{
+                font-size: 20px;
+            }
+            h2{
+                font-size: 18px;
+            }
+            h3{
+                font-size: 15px;
+            }
+            a{
+                font-size: 13px;
+            }
+            p{
+                font-size: 13px;
+            }
+            
+            
+           }
+              
+           
+        
+        </style>
+
+<script>
+    function toggleMenu() {
+        var navLinks = document.getElementById("nav-links");
+        navLinks.classList.toggle("active");
+    }
+</script>
+    </head>
+    <body>
+        <header>
+            <br>
+            <h1 style="text-align: center;">Admin Panel</h1>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <nav>
+                <div id="nav-links" class="nav-links">
+                <a class="navi"href="manageEm.php">Manage Employee</a>
+                <a class="navi"href="report.php">Generate Report </a>
+                <a class="navi"href="main.php">Logout</a>
+                </div>
+            </nav><br>
+        </header>
+        <main>
+            <section id="dashboard">
+                <h2>Welcome to the Admin Dashboard</h2>
+                <p>Use the options in the navigation bar to manage Employee and view reports.</p>
+            </section>
+            <section id="MngE">
+                <h3>Manage Employee</h3>
+                <ul>
+                    <li><a href="task.html">Add Employee</a></li>
+                    <li><a href="task.html">Edit Employee's details</a></li>
+                    <li><a href="task.html">Delete Employee</a></li>
+                </ul>
+            </section>
+            <section id="reports">
+                <h3>Generate Reports</h3>
+                <ul>
+                    <li><a href="report.php">Generate Reports</a></li>
+                </ul>
+            </section>
+        </main><br><br>
+        <footer>
+            <p>&copy; All Right Reserved. </p>
+        </footer>
+
+    </body>
+</html>

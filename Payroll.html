@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    main {        
+        margin: 2rem auto;
+        max-width: 600px;
+        height: 400px;
+        padding: 1rem;
+        background: white;
+        border-radius: 8px;
+        border: 2px solid black;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+    .payroll-details {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 1.5rem;
+    }
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #3b5be5;
+    }
+    .payroll-details table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .payroll-details table th,
+    .payroll-details table td {
+      text-align: left;
+      padding: 0.75rem;
+      border-bottom: 1px solid #ccc;
+    }
+    .payroll-details table th {
+      background-color: #8e6ff3;
+      color: #fff;
+    }   
+    footer {
+    text-align: center;
+    padding: 1rem;
+    background: #0e4185;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   }
+   .btn{
+      text-align: center;
+      color: rgb(208, 39, 39);
+      border-radius: 5px;
+      border-color:rgb(138, 41, 41); 
+      border-style:solid; 
+      border-width:2px; 
+      width:150px; 
+      height:7opx; 
+      font-size:15px;
+      float: right;
+      background-color: rgb(165, 238, 238);
+    }
+    @media (max-width: 600px) {
+      header, .payroll-details {
+        padding: 1rem;
+      }
+      .payroll-details table th,
+      .payroll-details table td {
+        font-size: 14px;
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="payroll-details">
+      <h2>Payroll Information</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Basic Salary</th>
+            <th>Allowances</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>October 2024</td>
+            <td>$3000</td>
+            <td>$500</td>
+          </tr>
+          <tr>
+            <td>September 2024</td>
+            <td>$3000</td>
+            <td>$400</td>
+          </tr>          
+          <tr>
+            <td>Auguest 2024</td>
+            <td>$3000</td>
+            <td>$200</td>
+          </tr>
+          <tr>
+            <td>July 2024</td>
+            <td>$3000</td>
+            <td>$500</td>
+          </tr>
+
+        </tbody>
+      </table><br><br>
+      <a href="Employee.html" target="_blank">
+      <button class="btn">Back</button></a>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; All Right Reserved. </p>
+</footer>
+</body>
+</html>
